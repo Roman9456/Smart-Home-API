@@ -1,4 +1,4 @@
-##Smart Home API 
+## Smart Home API 
 Overview
 This project implements a REST API using Django Rest Framework (DRF) for managing temperature sensors in a smart home environment. The system supports basic CRUD operations (Create, Read, Update, Delete) for sensors and their temperature measurements.
 
