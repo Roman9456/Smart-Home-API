@@ -2,7 +2,7 @@
 Overview
 This project implements a REST API using Django Rest Framework (DRF) for managing temperature sensors in a smart home environment. The system supports basic CRUD operations (Create, Read, Update, Delete) for sensors and their temperature measurements.
 
-Key Features
+# Key Features
 Sensor Management: Create, update, and retrieve sensors.
 Temperature Measurement: Add temperature measurements associated with sensors.
 Detailed Sensor View: Retrieve a sensor along with its temperature measurements.
@@ -10,7 +10,7 @@ Optional Image Attachment: Sensors can optionally attach images to temperature m
 Models
 The project includes two main models:
 
-Sensor:
+# Sensor:
 
 name: The name of the sensor (e.g., "ESP32").
 description: An optional description of where the sensor is located (e.g., "Living room" or "Kitchen").
@@ -45,14 +45,12 @@ PostgreSQL database
 Steps
 Clone the repository:
 
-bash
-Copy code
+
 git clone <repository_url>
 cd smart-home-api
 Install dependencies:
 
-bash
-Copy code
+
 pip install -r requirements.txt
 Set up the PostgreSQL database:
 
@@ -60,13 +58,11 @@ Create a database for the project.
 Configure the database settings in settings.py.
 Apply database migrations:
 
-bash
-Copy code
+
 python manage.py migrate
 Run the development server:
 
-bash
-Copy code
+
 python manage.py runserver
 Testing the API:
 
@@ -76,8 +72,7 @@ Image Attachment for Measurements
 Sensors now support attaching images to their temperature measurements. To enable this feature:
 
 Ensure that the Measurement model includes an ImageField:
-python
-Copy code
+
 image = models.ImageField(null=True, blank=True)
 Use the appropriate endpoint to upload images along with temperature data.
 Tips and Tricks
